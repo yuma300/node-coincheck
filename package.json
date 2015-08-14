@@ -1,0 +1,27 @@
+{
+  "name": "node-coincheck",
+  "version": "0.0.0",
+  "description": "coincheck api client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yuma300/node-coincheck.git"
+  },
+  "keywords": [
+    "bitcoin"
+  ],
+  "author": "yuma300",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuma300/node-coincheck/issues"
+  },
+  "dependencies": {
+    "ws": "0.7.x",
+    "limit-request-promise": "",
+    "bluebird": "^2.9.34"
+  },
+  "homepage": "https://github.com/yuma300/node-coincheck"
+}
