@@ -6,6 +6,6 @@ fs.readFileAsync('./config.json').then(JSON.parse).
 then(function(config){
     var api = zaif.createPrivateApi(config.apikey, config.secretkey, 'user agent is node-coincheck');
     // call api
-    api.getInfo().then(console.log);
+    api.getBalance().then(console.log);
 }).catch(console.log);
 
