@@ -19,9 +19,9 @@
     "url": "https://github.com/yuma300/node-coincheck/issues"
   },
   "dependencies": {
-    "ws": "0.7.x",
-    "limit-request-promise": "",
-    "bluebird": "^2.9.34"
+    "bluebird": "^2.9.34",
+    "request": "^2.60.0",
+    "ws": "0.7.x"
   },
   "homepage": "https://github.com/yuma300/node-coincheck"
 }
