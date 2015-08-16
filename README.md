@@ -4,6 +4,17 @@
 npm install node-coincheck
 ```
 
+## Public API
+```
+var coincheck = require('node-coincheck');
+var api = coincheck.PublicApi;
+
+api.ticker(function(body) {
+        console.log(body);
+    }
+)
+```
+
 ## Private API
 
 ```

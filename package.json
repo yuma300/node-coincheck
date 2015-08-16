@@ -1,6 +1,6 @@
 {
   "name": "node-coincheck",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "coincheck api client",
   "main": "index.js",
   "private": false,
