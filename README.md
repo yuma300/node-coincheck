@@ -1,9 +1,7 @@
 ## Private API
 
-
-
 ```
-var coincheck = require('./index');
+var coincheck = require('node-coincheck');
 var Promise = require('bluebird');
 var fs = Promise.promisifyAll(require('fs'));
 
