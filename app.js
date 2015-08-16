@@ -4,10 +4,11 @@ var fs = Promise.promisifyAll(require('fs'));
 
 fs.readFileAsync('./config.json').then(JSON.parse).
 then(function(config){
-    var api = zaif.createPrivateApi(config.apikey, config.secretkey, 'user agent is node-coincheck');
+    var api = zaif.createPrivateApi(config.coincheck_apikey, config.coincheck_secretkey, 'user agent is node-coincheck');
     // call api
-    //api.getBalance().then(console.log);
-    api.activeOrders().then(console.log);
-    //api.trade('btc_jpy', 'buy', 1, 1).then(console.log);
+    //api.getBalance();
+    api.activeOrders();
+    //api.trade('btc_jpy', 'buy', 1, 1);
+    //api.cancelOrder(5731006);
 }).catch(console.log);
 
