@@ -1,3 +1,9 @@
+## install
+
+```
+npm install node-coincheck
+```
+
 ## Private API
 
 ```
