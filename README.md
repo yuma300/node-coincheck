@@ -54,12 +54,12 @@ then(function(config){
         }
     );
 
-    api.exchangeToLeverage('JPY', 10000, function(body){
+    api.transferToLeverage('JPY', 10000, function(body){
             console.log(body);
         }
     );
 
-    api.exchangeFromLeverage('JPY', 10000, function(body){
+    api.transferFromLeverage('JPY', 10000, function(body){
             console.log(body);
         }
     );
