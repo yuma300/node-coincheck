@@ -13,6 +13,11 @@ api.ticker(function(body) {
         console.log(body);
     }
 )
+
+api.trades(offset, function(body) {
+        console.log(body);
+    }
+)
 ```
 
 ## Private API
@@ -39,6 +44,22 @@ then(function(config){
         }
     );
     api.cancelOrder(5910927, function(body) {
+            console.log(body);
+        }
+    );
+
+    // for leverage
+    api.getLeverageBalance(function(body){
+            console.log(body);
+        }
+    );
+
+    api.exchangeToLeverage('JPY', 10000, function(body){
+            console.log(body);
+        }
+    );
+
+    api.exchangeFromLeverage('JPY', 10000, function(body){
             console.log(body);
         }
     );
